@@ -1,0 +1,600 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-criativa</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrapValidator.css">
+    
+  </head>
+  <body>
+    <header class="navbar-fixed-top">
+      <div id="login-register-mobile">
+    		<ul>
+    			<li data-toggle="modal" data-target="#Modal-register"><a>Registrar</a></li>
+    			<li data-toggle="modal" data-target="#Modal-login"><a>Entrar</a></li>
+            	<li><a>Usuario</a></li>
+            	<li><a>Sair</a></li>
+
+    		</ul>
+    		<ul id="usuario">
+    			
+    		</ul>
+
+
+    	</div>
+    	<div class="header-logo">
+      	<img style="display: none;" alt="Logotipo da E-criativa do cabeçalho" src="">
+      	<a href="index.jsp" style="text-decoration: none; color: #fff;"><h1>E-criativa</h1></a>
+    	</div>
+        <!--navbar onde fica o menu-->
+    	<nav>
+        	<div class="login-register">
+          		<ul>
+            		<li data-toggle="modal" data-target="#Modal-login"><a>Entrar</a></li>
+            		<li data-toggle="modal" data-target="#Modal-register"><a>Registrar</a></li>
+            		<li><a>Sair</a></li>
+            		<li><a>Usuario</a></li>
+          		</ul>
+        	</div>
+        	<!--input buscar, quando o menu esta para dispositivos mobile-->
+    		<div class="input-search-mobile">
+      			<input type="text" class="form-control" placeholder="Buscar">
+    		</div>
+    		<a href="carrinho.jsp">
+          		<div class="nav-cart"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+        	</a>
+        	<!--input buscar, quando o menu esta para dispositivos desktops-->
+        	<div class="nav-search">
+          		<button type="button" class="btn-search"><span class="glyphicon glyphicon-search"></span></button>
+          		<div id="input-nav-search">
+            		<input type="text" class="form-control" placeholder="Buscar">
+          		</div>
+        	</div>
+    		<button class="btn-menu"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+
+
+    		<div class="menu">
+    		  <ul>
+    			 <li><a href="">Inicio</a></li>
+    			 <li><a href="">Obras</a></li>
+    			 <li><a href="">Artistas</a></li>
+    			 <li><a href="">Coletivo</a></li>
+    			 <li><a href="">Sobre</a></li>
+    			 <li id="divisor-menu"></li>
+    		  </ul>
+    		</div>  
+
+    	</nav>
+    </header>
+    
+   
+    <!--carrossel principal-->
+    <div class="carousel-principal">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!--lista de itens dentro do carrossel-->
+        <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+            <img class="center-block" src="img/a.png" alt="...">
+            <div class="carousel-caption"></div>
+          </div>
+
+          <div class="item">
+            <img class="center-block" src="img/a.png" alt="...">
+            <div class="carousel-caption"></div>
+          </div>
+
+          <div class="item">
+            <img class="center-block" src="img/a.png" alt="...">
+            <div class="carousel-caption"></div>
+          </div>
+    
+        </div>
+
+        <!-- Controles do corrossel -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    
+    <div id="container-paineis_secundarios-footer">
+      <!--primeiro carrossel secundario - Obras-->
+      <div class="carousel-secundario">
+        <h2>Obras</h2>
+        <!--lista de itens-->
+        <div class="jcarousel-wrapper">
+          <div class="jcarousel">
+            <ul>
+              <li>
+                <form class="painel-carousel">
+                  <img src="img/a.png" alt="...">
+                  <div>
+                    <h3><a href="">Nome art</a></h3>
+                    
+                    <h4>R$ 0,00</h4>
+             
+                   
+                  
+                    
+                    
+                  </div>
+                </form>
+              </li>
+              <li>
+                <form class="painel-carousel">
+                  <img src="img/a.png" alt="...">
+                  <div>
+                    <h3><a href="">Nome art</a></h3>
+                    
+                    <h4>R$ 0,00</h4>
+             
+                   
+                    
+                    
+                    
+                  </div>
+                </form>
+              </li>
+              <li>
+                <form class="painel-carousel">
+                  <img src="img/a.png" alt="...">
+                  <div>
+                    <h3><a href="">Nome art</a></h3>
+                    
+                    <h4>R$ 0,00</h4>
+             
+                   
+                   
+                    
+                    
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <!--controles do carrossel-->
+          <a class="left carousel-control jcarousel-control-prev" href="#carousel-3" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control jcarousel-control-next" href="#carousel-3" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a> 
+        </div>
+      </div>
+
+
+
+      <!--segundo carrossel secundario-->
+      <div id="carousel-artista" class="carousel-secundario">
+        <h2>Artistas</h2>
+        <!--lista de itens-->
+        <div class="jcarousel-wrapper">
+          <div class="jcarousel">
+            <ul>
+              <li>
+                <form class="painel-carousel">
+                  <img src="img/a.png" alt="...">
+                  <div>
+                    <h3><a href="">Nome art</a></h3>
+                    <hr>
+                 
+                   
+                  </div>
+                </form>
+              </li>
+              <li>
+                <form class="painel-carousel">
+                  <img src="img/a.png" alt="...">
+                  <div>
+                    <h3><a href="">Nome art</a></h3>
+                    <hr>
+               
+              
+                  </div>
+                </form>
+              </li>
+              <li>
+                <form class="painel-carousel">     
+                  <img src="img/a.png" alt="...">
+                  <div>
+                    <h3><a href="">Nome art</a></h3>
+                    <hr>
+                  
+                   
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <!--controles do carrossel-->
+          <a class="left carousel-control jcarousel-control-prev" href="#carousel-3" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control jcarousel-control-next" href="#carousel-3" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a> 
+        </div>
+      </div>
+
+      <!--rodapé-->
+      <footer>
+        <div id="footer">
+          <div id="titulo-footer">
+            <img alt="Logotipo da E-criativa do rodapé" src="img/a.png">
+          </div>
+          <div id="contatos"> 
+            <h3>Contatos</h3>
+            <ul>
+              <li>Telefone: (xx) xxxx-xxxx</li>
+              <li>E-mail: E-criativa@gmail.com</li>
+            </ul>
+          </div>
+          <div id="redes-sociais">
+            <h3>Rede Sociais</h3>
+            <ul>
+              <li><a href="#"><span id="facebook" class="fa fa-facebook-square" aria-hidden="true"></span></a></li>
+              <li><a href="#"><span id="youtube" class="fa fa-youtube-square" aria-hidden="true"></span></a></li>
+              <li><a href="#"><span id="twitter" class="fa fa-twitter-square" aria-hidden="true"></span></a></li>
+            </ul>
+          </div>
+          <div id="Copyright">
+            <p>Copyright © Todos os direitos reservados</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+
+		<!-- modal login-->
+
+		<div class="modal fade bs-example-modal-lg" id="Modal-login" tabindex="-1" role="dialog" aria-labelledby="">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+        		<h4>Entrar</h4>
+      		</div>
+      		<div class="modal-body">
+      			<form>
+      				<div>
+      					<input type="text" class="form-control" name="usuario" placeholder="Usuário">
+      				</div>
+      				<div>
+      					<input type="password" class="form-control" name="Senha" placeholder="Senha">
+      				</div>
+      				<div class="checkbox">
+      					<label>
+      						<input type="checkbox" name="Lembre-me">Lembre-me
+      					</label>
+      				</div>
+      				<div>
+      					<button type="submit">Entrar</button>
+      				</div>
+      			</form>
+      		</div>
+
+      		<div class="modal-footer">
+      			<div class="modal-btn-footer">
+        			<button type="button" id="btn1">Desejo me registrar</button>
+        			<button type="button" id="btn2">Esqueci minha senha</button>
+        		</div>
+      		</div>
+    		</div>
+  		</div>
+		</div>
+
+
+<!-- modal register-->
+
+		<div class="modal fade bs-example-modal-lg" id="Modal-register" tabindex="-1" role="dialog" aria-labelledby="">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+        		<h4>Registrar</h4>
+      		</div>
+      		<div class="modal-body">
+      			<button id="comprador" data-toggle="modal" data-target="#Modal-Register-Comprador" data-dismiss="modal">	
+      				<h4>Comprador</h4>
+      				<p>................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................</p>
+      	 		</button>
+      
+      			<button id="artista" data-toggle="modal" data-target="#Modal-Register-Artista" data-dismiss="modal">
+      				<h4>Artista</h4>
+      				<p>................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................</p>
+      			</button>
+      			<button id="coletivo">
+      				<h4>Coletivo</h4>
+      				<p>................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................
+      	   			................................</p>
+      			</button>
+      		</div>
+      		<div class="modal-footer">
+      			<p>Escolha uma das opções acima</p>
+        	</div>
+      	</div>
+    	</div>
+  	</div>
+	
+
+
+<!-- modal-register-comprador-->
+
+  	<div class="modal fade" id="Modal-Register-Comprador" tabindex="-1" role="dialog" aria-labelledby="">
+    	<div class="modal-dialog" role="document">
+      	<div class="modal-content">
+        	<div class="modal-header">
+          	<button type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+          	<h4>Registrar Comprador</h4>
+        	</div>
+          <form id="form-register-comprador" method="post" action="target.php" novalidate>
+        	<div class="modal-body">
+            <div id="div1">
+              <div class="row">
+                <div class="form-horizontal" >
+     	            <fieldset>
+                    <div class="form-group">
+            					<div id="nome-comp" class="col-lg-12">
+            						<label for="nome">Nome completo</label>
+                        <input id="nome" type="text" class="neutro form-control" name="usuario" placeholder="ex: Maria" data-container="body" data-toggle="popover" data-trigger="manual" data-placement="right" data-content="Digite seu nome completo" required autofocus/>
+                        <span id="errornome" class="test">Digite seu nome completo.</span>
+                      </div>
+
+                    </div>
+          					<div class="form-group">
+            					<div class="col-lg-12">
+              					<label for="">Endereço de e-mail</label>
+              					<input type="email" class="neutro form-control" name="email" placeholder="ex: E-criativa@hotmail.com" data-container="body" data-toggle="popover" data-trigger="manual" data-placement="right" data-content="Digite um E-mail válido" required />
+                        <span id="erroremail" class="test">Digite um E-mail válido.</span>
+            					</div>
+          					</div>
+          					<div class="form-group">
+            					<div class="col-lg-12">
+              					<label for="exampleInputData">Data de Nascimento</label>
+              					<input value="" type="text" tabindex="1" class="neutro form-control" name="dtNascimento" placeholder="ex: dd/mm/aaaa" data-container="body" data-toggle="popover" data-trigger="manual" data-placement="right" data-content="Digite uma data de nascimento válida" required />
+                        <span id="errordtNasc" class="test">Digite uma data de nascimento válida.</span>
+            					</div>
+          					</div>
+          					<div class="form-group">
+            					<div class="col-lg-6">
+              					<label for="exampleInputPassword1">Senha</label>
+              					<input type="password" class="form-control" id="senha"  name="senha" placeholder="" required />
+                        <span id="errorsenha" class="test"><strong>Senha inválida</strong>.&nbsp; Digite uma senha com no minimo 6 caracteres, que tenha no minimo 1 letra e 1 número.</span>
+            					</div>
+            					<div class="col-lg-6">
+              					<label for="exampleInputPassword1">Confirmar Senha</label>
+              					<input type="password" class="neutro form-control" id="" name="confSenha" placeholder="" data-container="body" data-toggle="popover" data-trigger="manual" data-placement="right" data-html="true" data-content="" required />
+                        <span id="errorconfSenha" class="test">Sua senha de confirmação não está igual a primeira senha digitada.</span>
+            					</div>
+          					</div>
+        						<div class="form-group">
+          						<div class="col-lg-6">
+              					<label for="exampleInputFone">Telefone</label>
+              					<input type="tel" class="neutro form-control" name="telefone" id="" placeholder="" data-container="body" data-toggle="popover" data-trigger="manual" data-placement="right" data-html="true" data-content="Digite um telefone válido" required />
+                        <span id="errortel" class="test">Digite um telefone válido</span>
+                        <div class="col-lg-6"></div>
+            					</div>
+          				</fieldset>
+          			</div>
+          		</div>
+          	</div>
+
+     				<div id="div2">
+              <div class="row">	
+                <div class="col-lg-12">	
+      				    <div class="thumbnail">
+      				      <input type="file" id="inpt_ftcomprador" accept=".jpg, .png" required />
+        				    <img id="ftcomprador" src="" alt="Foto do perfil">
+    						  </div>
+  						  </div>
+    						
+    					</div>
+        		</div>
+      		</div>
+    			<div class="modal-footer">
+        		<button id="btn-form-comprador" type="button" class="btn-modal-footer">Confirmar</button>
+      		</div>
+          </form>
+    		</div>
+  		</div>
+  	</div>
+
+
+	<!--Modal Register Obra Artista-->
+	<div class="modal fade bs-example-modal-lg" id="Modal-Register-Artista" tabindex="-1" role="dialog" aria-labelledby="">
+  	<div class="modal-dialog modal-lg" role="document">
+    	<div class="modal-content">
+      	<div class="modal-header">
+        	<button type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+        	<h4>Registrar Artista</h4>
+      	</div>
+      	<div class="modal-body">
+        	<div class="row">
+          	<form id="form-register-artista" method="post" action="target.php" class="form-horizontal">
+          		<div class="col-lg-12">
+                <div class="form-group">
+          				<label>Nome Obra</label>
+          				<input type="text" class="neutro form-control" id="exampleInputName" placeholder="" name="campovazio" required />
+        				</div>
+      				</div>
+
+      				<div class="col-lg-12">
+                <div class="form-group">
+      				    <a href="#" class="thumbnail img-obra-principal">
+                    <input type="file" name="" id="inpt-img-obra" accept=".jpg, .png" required />
+                    <img src="" alt="imagem da obra" id="img-obra-register">
+      		        </a>
+                </div>
+      				</div>
+
+      				<div class="col-lg-12">
+                <div class="form-group">
+        					<label>Resumo da Obra</label>
+        					<textarea placeholder="" name="" required></textarea>
+        				</div>
+              </div>
+      				<div class="col-lg-12">
+                <div class="form-group">
+        					<label>Detalhes da Obra</label>
+        					<textarea placeholder="" name="" required></textarea>
+        				</div>
+              </div>
+      				<div class="col-sm-1"></div>
+      				<div class="col-sm-2">
+                <div class="input-group form-group">
+                  <label>Valor</label>
+                  <input type="text" class="neutro form-control" name="" aria-label="..." required />
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="input-group form-group">
+                  <label>Quantidade</label>
+                  <input type="text" class="neutro form-control detalheobra" name="" aria-label="..." required />
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="input-group form-group">
+                  <label>Comprimento</label>
+                  <input type="text" class="neutro form-control" name="" aria-label="..." required />
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div id="group-altura" class="input-group form-group">
+                  <label>Altura</label>
+                  <input  type="text" class="neutro form-control " name="" aria-label="..." required />
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="input-group form-group">
+                  <label>Profundidade</label>
+                  <input type="text" class="neutro form-control" name="" aria-label="..." required />
+                </div>
+              </div>
+      				<div class="col-personalizado col-xs-6 col-md-3 col-lg-3">
+                <a href="#" class="thumbnail">
+                  <input type="file" name="" id="inpt-img-obra1" accept=".jpg, .png">
+                  <img src="" alt="" id="img-obra-register1">
+                </a>
+              </div>
+              <div class="col-personalizado col-xs-6 col-md-3 col-lg-3">
+                <a href="#" class="thumbnail">
+                  <input type="file" name="" id="inpt-img-obra2" accept=".jpg, .png">
+                  <img src="" alt="" id="img-obra-register2">
+                </a>
+              </div>
+              <div class="col-personalizado col-xs-6 col-md-3 col-lg-3">
+                <a href="#" class="thumbnail">
+                  <input type="file" name="" id="inpt-img-obra3" accept=".jpg, .png">
+                  <img src="" alt="" id="img-obra-register3">
+                </a>
+              </div>
+              <div class="col-personalizado col-xs-6 col-md-3 col-lg-3">
+                <a href="#" class="thumbnail">
+                  <input type="file" name="" id="inpt-img-obra4" accept=".jpg, .png">
+                  <img src="" alt="" id="img-obra-register4">
+                </a>
+              </div>
+        			<div class="row">
+                <div class="col-xs-offset-1 col-md-3 col-lg-2">
+          				<label><input type="checkbox" name="">Só Exibição</label>
+          			</div>
+          			<div class="col-xs-offset-1 col-md-3 col-lg-2">
+          				<label><input type="checkbox" name="">Vender</label>
+          			</div>
+          			<div class="col-xs-offset-1 col-md-3 col-lg-2">
+          				<label><input type="checkbox" name="">Frete gratis</label>
+          			</div>
+        			</div>
+      			</form>
+    			</div>
+  		  </div>
+    		<div class="modal-footer">
+          <button type="submit" class="btn-modal-footer" id="btn-cadastro-obra" data-target="#Modal-Register-Comprador" data-dismiss="modal">Confirmar</button>
+      	</div>
+  		</div>
+  	</div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="confirmacao-cadastro" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     	<div class="modal-body">
+     		<h4>Cadastro Realizado com sucesso. E-mail de confirmação enviado</h4>
+     	</div>
+    </div>
+  </div>
+</div>
+
+
+	
+    <script src="js/jquery-3.1.0.js"></script>
+    <!--personalização da pagina-->
+    <script type="text/javascript" src="js/style.js"></script>
+    <!--javascript e jquery do carrossel-->
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <!--validação de inputs-->
+    <script type="text/javascript" src="js/bootstrapValidator.js"></script>
+    <!--bootstrap-->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--personaliza o scroll-->
+    <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+  	<script type="text/javascript">
+  		$('#comprador').click(function () {
+  			$('#Modal-Register-Comprador .modal-dialog').attr('id','comprador-modal')
+  		});
+  		$('#artista').click(function () {
+  			$('#Modal-Register-Comprador .modal-dialog').attr('id',' ')
+  		});
+  	</script>
+
+  </body>
+</html>
